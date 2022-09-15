@@ -1,0 +1,32 @@
+[
+    {
+        "nbr": "1",
+        "price": "10",
+        "name": "Nom",
+        "adresse": "Adresse",
+        "bed": 7,
+        "bathroom": "4",
+        "image": "src/assets/maison3.jpg",
+        "mcarre": "99"
+    },
+    {
+        "nbr": "2",
+        "price": "975",
+        "name": "Scream",
+        "adresse": "63 Woodsboro",
+        "bed": 7,
+        "image": "src/assets/house2.png",
+        "bathroom": "3",
+        "mcarre": "92"
+    },
+    {
+        "nbr": "3",
+        "price": "999",
+        "name": "Freddy",
+        "adresse": "144 Elm Street",
+        "bed": 7,
+        "image": "src/assets/maison3.jpg",
+        "bathroom": "1",
+        "mcarre": "34"
+    }
+]
