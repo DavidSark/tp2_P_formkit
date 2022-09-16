@@ -3,7 +3,7 @@
     import Bed from "../components/icons/bed.vue";
     import Bath from "../components/icons/bath.vue";
     import Mcarre from "../components/icons/mcarre.vue";
-
+    import HeartIcon from "../components/icons/heart.vue";
    defineProps({
       name : {type: String, default:'Tarpon Bat'                                },
       price: {type:Number, default:'4800'                                        },
@@ -11,6 +11,7 @@
       bed: {type:Number , default: 8                                           },
       bathroom: {type:Number , default: 2                                       },
       mcarre: {type:String , default: '6x7.5'                                    },
+      fav:{ type:Boolean, default:false},
       });
 
 </script>
@@ -53,7 +54,7 @@
             border-2 border-indigo-100
           "
         >
-          <HeartIcon class="h-6 stroke-indigo-500 text-transparent"></HeartIcon>
+          <HeartIcon class="h-6 stroke-indigo-500 text-transparent" :class="{'fill-red-500 stroke-red-800' :fav}"></HeartIcon>
         </div>
       </div>
       <p class="text-base font-normal text-gray-900">

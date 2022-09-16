@@ -21,8 +21,12 @@ const maison = ref({});
                 },
                 }" :submit-attrs="{ classes: { input: 'bg-red-300 p-1 rounded' } }">
                 <FormKit name="name" label="nom"/>
-                <FormKit name="prix" label="prix" type="number"/>
-                <FormKit name="favori" label="mettre en valeur" type="checkbox" wrapper-class="flex"
+                <FormKit name="adresse" label="adresse" />
+                <FormKit name="bed" label="Nombre de lits" type="number"/>
+                <FormKit name="bathroom" label="Nombre de salle de bain" type="number"/>
+                <FormKit name="mcarre" label="m²" type="number"/>
+                <FormKit name="price" label="prix" type="number"/>
+                <FormKit name="fav" label="mettre en favoris" type="checkbox" wrapper-class="flex"
 /> 
             </FormKit>
         </div>
