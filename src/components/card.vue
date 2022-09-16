@@ -18,7 +18,7 @@
 <template>
      <figure class="flex flex-col mt-12 mx-8 w-96">
     <img
-      src="src/assets/house2.png"
+      src="@/assets/house2.png"
       alt="house"
       class="rounded-t-lg w-full h-48 object-cover"
     />

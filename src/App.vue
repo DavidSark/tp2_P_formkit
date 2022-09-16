@@ -12,7 +12,7 @@
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="Simple">
+        <router-link class="text-red-600 underline" to="simple">
           lien vers
           <code class="font-mono">/src/pages/Simple.vue</code>
         </router-link>
@@ -39,6 +39,12 @@
         <router-link class="text-red-600 underline" to="/offre/2">
           lien vers
           <code class="font-mono">/src/offre/nbr2</code>
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/edit/new">
+          lien vers
+          <code class="font-mono">/src/pages/edit/new.vue</code>
         </router-link>
       </li>
       
