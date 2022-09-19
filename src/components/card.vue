@@ -54,7 +54,7 @@
             border-2 border-indigo-100
           "
         >
-          <HeartIcon class="h-6 stroke-indigo-500 text-transparent" :class="{'fill-red-500 stroke-red-800' :fav}"></HeartIcon>
+          <HeartIcon class="h-6 stroke-indigo-500 text-transparent" :class="{'fill-indigo-500' :fav}"></HeartIcon>
         </div>
       </div>
       <p class="text-base font-normal text-gray-900">
