@@ -12,19 +12,19 @@
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="simple">
+        <router-link class="text-red-600 underline" to="/simple">
           lien vers
           <code class="font-mono">/src/pages/Simple.vue</code>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="liste">
+        <router-link class="text-red-600 underline" to="/liste">
           lien vers
           <code class="font-mono">/src/pages/liste.vue</code>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="liste-fetch">
+        <router-link class="text-red-600 underline" to="/liste-fetch">
           lien vers
           <code class="font-mono">/src/pages/liste-fetch.vue</code>
         </router-link>
@@ -49,14 +49,14 @@
       </li>
 
       <li>
-        <router-link class="text-red-600 underline" to="liste-supabase">
+        <router-link class="text-red-600 underline" to="/liste-supabase">
           lien vers
           <code class="font-mono">/src/pages/liste-supabase</code>
         </router-link>
       </li>
 
       <li>
-        <router-link class="text-red-600 underline" to="authentification">
+        <router-link class="text-red-600 underline" to="/authentification">
           lien vers
           <code class="font-mono">/src/pages/authentification</code>
         </router-link>
@@ -80,6 +80,4 @@
   </Suspense>
 </template>
 
-<script setup lang="ts">
-import { Bars3Icon } from '@heroicons/vue/20/solid'
-</script>
+
