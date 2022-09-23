@@ -62,7 +62,7 @@
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/edit/id2">
+        <router-link class="text-red-600 underline" to="/edit/id ">
           lien vers
           <code class="font-mono">/src/pages/edit</code>
         </router-link>

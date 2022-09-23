@@ -8,6 +8,18 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 const maison = ref({});
 
+const props = defineProps(["id"]);
+if (props.id) {
+ // On charge les données de la maison
+ let { data, error } = await supabase
+ .from("Maison")
+ .select("*")
+ .eq("id", props.id);
+ if (error) console.log("n'a pas pu charger le table Maison :", error);
+ else maison.value = (data as any[])[0];
+}
+
+
 async function upsertMaison(dataForm, node) {
  const { data, error } = await supabase.from("Maison").upsert(dataForm);
  if (error || !data) node.setErrors([error?.message])
@@ -29,10 +41,6 @@ async function upsertMaison(dataForm, node) {
         <div class="p-2">
             <h2 class="text-2xl">Résultat (Prévisualisation)</h2>
             <card v-bind="maison"/>
-        </div>
-
-        <div>
-            
         </div>
 
         <div class="p-2 border-2 mt-20 bg-indigo-50 rounded-2xl">
