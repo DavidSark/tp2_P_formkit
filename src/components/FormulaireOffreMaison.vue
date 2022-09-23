@@ -1,22 +1,34 @@
 <script setup lang="ts">
+import {supabase} from '@/supabase'
 import { ref } from "@vue/reactivity";
 import card from "@/components/card.vue";
 import { label } from "@formkit/inputs";
 
 const maison = ref({});
 
+async function upsertMaison(dataForm, node) {
+ const { data, error } = await supabase.from("Maison").upsert(dataForm);
+ if (error) node.setErrors([error.message])
+}
+
 </script>
 
 
 <template>
+    
     <div class="flex flex-row-reverse justify-center">
         <div class="p-2">
             <h2 class="text-2xl">Résultat (Prévisualisation)</h2>
             <card v-bind="maison"/>
         </div>
+
+        <div>
+            
+        </div>
+
         <div class="p-2 border-2 mt-20 bg-indigo-50 rounded-2xl">
             <div class="p-4 ">
-                <FormKit type="form" v-model="maison" :config="{
+                <FormKit @submit="upsertMaison" type="form" v-model="maison" :config="{
                     classes: {
                     input: 'p-1 rounded border-gray-300 mb-3 shadow-sm border',
                     label: 'text-gray-600 font-medium',

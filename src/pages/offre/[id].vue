@@ -3,17 +3,17 @@
     import Card from '../../components/card.vue'
     
     defineProps({
-        nbr: String,
+        id: String,
     })
 </script>
 
 <template>
     <div>
-        <h1>{{nbr}}</h1>
-        <Card :price="Maisons[nbr].price"
-              :image="Maisons[nbr].image"
-              :name="Maisons[nbr].name"
-              :adresse="Maisons[nbr].adresse"
+        <h1>{{id}}</h1>
+        <Card :price="Maisons[id].price"
+              :image="Maisons[id].image"
+              :name="Maisons[id].name"
+              :adresse="Maisons[id].adresse"
               />
     </div>
 </template>

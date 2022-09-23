@@ -1,6 +1,6 @@
 [
     {
-        "nbr": "1",
+        "id": "1",
         "price": "10",
         "name": "Nom",
         "adresse": "Adresse",
@@ -10,7 +10,7 @@
         "mcarre": "99"
     },
     {
-        "nbr": "2",
+        "id": "2",
         "price": "975",
         "name": "Scream",
         "adresse": "63 Woodsboro",
@@ -20,7 +20,7 @@
         "mcarre": "92"
     },
     {
-        "nbr": "3",
+        "id": "3",
         "price": "999",
         "name": "Freddy",
         "adresse": "144 Elm Street",
