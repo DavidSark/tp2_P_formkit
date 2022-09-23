@@ -3,13 +3,22 @@ import {supabase} from '@/supabase'
 import { ref } from "@vue/reactivity";
 import card from "@/components/card.vue";
 import { label } from "@formkit/inputs";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const maison = ref({});
 
 async function upsertMaison(dataForm, node) {
  const { data, error } = await supabase.from("Maison").upsert(dataForm);
- if (error) node.setErrors([error.message])
+ if (error || !data) node.setErrors([error?.message])
+ else {
+ node.setErrors([]);
+ router.push({ name: "edit-id", params: { id: data[0].id } });
+ }
 }
+
+
+
 
 </script>
 
