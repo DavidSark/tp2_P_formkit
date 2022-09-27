@@ -2,7 +2,7 @@
 
 import { supabase } from "../supabase";
 import { ref } from "@vue/reactivity"
-import FormulaireOffreMaison from "../components/FormulaireOffreMaison.vue";
+import Card from "../components/card.vue";
 
 console.log("supabase :", supabase); // pour vérifier et "garder" supabase dans le code
 
@@ -26,6 +26,8 @@ supabase.auth.onAuthStateChange(() => {
 <template>
     <div>
         <h6>Liste supabase</h6>
-        <FormulaireOffreMaison />
+        <div v-for ="Maisons in Maison" :key="Maisons.nom">
+            <Card v-bind="Maisons"></Card>
+        </div>
     </div>
 </template>
