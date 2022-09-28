@@ -18,13 +18,13 @@
         <button v-if="user" @pointerdown="supabase.auth.signOut()">
           Se déconnecter ({{ user.email }})
         </button>
-        <FormKit
+        <FormKit 
           v-else
           type="form"
           :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
           @submit="signIn"
         >
-          <FormKit name="email" label="Votre eMail" type="email" />
+          <FormKit class="" name="email" label="Votre eMail" type="email" />
           <FormKit name="password" label="Mot de passe" type="password" />
           <formKit
             label="Nouvel utilisateur ?"

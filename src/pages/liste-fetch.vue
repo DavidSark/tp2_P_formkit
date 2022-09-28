@@ -8,7 +8,7 @@
         
     
 <template>
-    <div>
+    <div class="flex items-center flex-col">
         <p>Liste avec fetch</p>
        <Card v-for="m in Maisons" :key="m" v-bind="m"></Card>
     </div>

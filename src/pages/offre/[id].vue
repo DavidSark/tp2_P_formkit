@@ -8,7 +8,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="flex items-center flex-col">
         <h1>{{id}}</h1>
         <Card :price="Maisons[id].price"
               :image="Maisons[id].image"

@@ -24,7 +24,7 @@ supabase.auth.onAuthStateChange(() => {
         
     
 <template>
-    <div>
+    <div class="flex items-center flex-col">
         <h6>Liste supabase</h6>
         <div v-for ="Maisons in Maison" :key="Maisons.nom">
             <Card v-bind="Maisons"></Card>

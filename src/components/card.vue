@@ -17,6 +17,7 @@
 </script>
 
 <template>
+  <div>
      <figure class="flex flex-col mt-12 mx-8 w-96">
     <img
       src="@/assets/house2.png"
@@ -77,7 +78,7 @@
       </div>
     </figcaption>
   </figure>
-
+</div>
   
 </template>
 

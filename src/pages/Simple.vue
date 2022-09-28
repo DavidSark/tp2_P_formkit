@@ -26,7 +26,7 @@ const unObjet = {
 </script>
 
 <template>
-    <div>
+    <div class="flex items-center flex-col">
         <p>Simple</p>
         <Card></Card>
         <Card v-bind="{name: 'France', price:'2 000', adresse:'Montbéliard', bed:'8', bathroom: '3', mcarre:'37'}"></Card>
