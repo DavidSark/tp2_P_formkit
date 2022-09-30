@@ -36,6 +36,9 @@
                         <router-link class="text-black  no-underline hover:text-indigo-400" to="/edit/id ">
                           <code class="font-mono">Edit</code>
                         </router-link>
+                        <router-link class="text-black  no-underline hover:text-indigo-400" to="/quartier">
+                          <code class="font-mono">Quartier</code>
+                        </router-link>
                     </div>
                 </div>
               
