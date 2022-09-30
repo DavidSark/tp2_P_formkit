@@ -18,12 +18,12 @@
                         <router-link class="text-black  no-underline hover:text-indigo-400" to="/liste-fetch">
                           <code class="font-mono">Liste-Fetch</code>
                         </router-link>
-                        <router-link class="text-black  no-underline hover:text-indigo-400" to="/offre/1">
+                        <!-- <router-link class="text-black  no-underline hover:text-indigo-400" to="/offre/1">
                           <code class="font-mono">Offre nbr1</code>
                         </router-link>
                         <router-link class="text-black  no-underline hover:text-indigo-400" to="/offre/2">
                           <code class="font-mono">Offre nbr2</code>
-                        </router-link> 
+                        </router-link>  -->
                         <router-link class="text-black  no-underline hover:text-indigo-400" to="/edit/new">
                           <code class="font-mono">New.vue</code>
                         </router-link>
@@ -38,6 +38,9 @@
                         </router-link>
                         <router-link class="text-black  no-underline hover:text-indigo-400" to="/quartier">
                           <code class="font-mono">Quartier</code>
+                        </router-link>
+                        <router-link class="text-black  no-underline hover:text-indigo-400" to="/quartier/new">
+                          <code class="font-mono">New Quartier</code>
                         </router-link>
                     </div>
                 </div>

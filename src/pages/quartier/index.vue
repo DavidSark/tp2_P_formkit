@@ -28,10 +28,29 @@ if (error) console.log("n'a pas pu charger la table quartiercommune :", error);
                 class="border">
         {{ c.libelle_Commune }}
     </DisclosureButton>
-
+<!-- 
     <DisclosurePanel  v-for="q in (listeQuartier as any[])" :key="q.libelle_Quartier">
         {{ q.libelle_Quartier }}
-    </DisclosurePanel>
+    </DisclosurePanel> -->
+
+   <DisclosurePanel v-for="q in (listeQuartier as any[])" :key="q.libelle_Quartier">
+      <li
+      v-for="q in listeQuartier"
+      :key="q.code_Quartier">
+
+      <RouterLink
+        :to="{
+          name: 'quartier-id',
+          params: { id: q.code_Quartier },
+        }">
+        
+        {{ q.libelle_Quartier }}
+
+      </RouterLink>
+
+    </li>
+   </DisclosurePanel>
+    
     </Disclosure>
   </section>
 </template>
