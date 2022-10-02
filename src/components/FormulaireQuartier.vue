@@ -40,7 +40,7 @@
     const { data, error } = await supabase
         .from("Quartier")
         .delete()
-        .match({ code_Quartier: quartierObject.value.code_Quartier });
+        .match({ code_Quartier: quartierObject.value });
     if (error) {
         console.error(
             "Erreur à la suppression de ",
@@ -83,7 +83,7 @@
           </div>
 
           <section>
-        <button type="button" v-if="quartierObject.code_Quartier" @click="($refs.dialogSupprimer as any).showModal()"
+        <button type="button" v-if="quartierObject" @click="($refs.dialogSupprimer as any).showModal()"
             class="focus-style justify-self-end rounded-md bg-red-500 p-2 shadow-sm">
             Supprimer l'offre
         </button>
