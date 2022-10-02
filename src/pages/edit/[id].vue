@@ -11,7 +11,6 @@ defineProps({
 
 <template>
     <div>
- 
         <FormulaireOffreMaison :id="id" />
     </div>
  

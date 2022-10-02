@@ -2,7 +2,7 @@
   <nav>
                 <div class="hidden lg:flex justify-center bg-indigo-200 space-x-12">
                     <div class="flex items-center py-5 px-2">
-                        <RouterLink to="/"><img src="public/favicon.ico"></RouterLink>
+                        <RouterLink to="/"><img src="/favicon.ico"></RouterLink>
                     </div>
 
                     <div class=" hidden text-black lg:flex items-center space-x-6">
