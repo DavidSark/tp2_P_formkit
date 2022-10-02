@@ -28,7 +28,15 @@ async function modifQuartier(dataForm, node) {
     }
 }
 
-
+const { data: listeCommune, error } = await supabase
+  .from("Commune")
+  .select("*");
+if (error) console.log("n'a pas pu charger la table Commune :", error);
+// Les convertir par `map` en un tableau d'objets {value, label} pour FormKit
+const optionsCommune = listeCommune?.map((commune) => ({
+  value: commune.code_Commune,
+  label: commune.libelle_Commune,
+}));
 
     </script>
     <template>
@@ -49,7 +57,12 @@ async function modifQuartier(dataForm, node) {
                     } }">
         <FormKit class="border-2 borcer" name="libelle_Quartier" label="Nom" />
 
-       
+        <FormKit
+        type="select"
+        name="code_Commune"
+        label="Commune"
+        :options="optionsCommune"
+      />
         
       </FormKit>
         </div>
